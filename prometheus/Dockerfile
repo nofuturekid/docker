@@ -7,7 +7,7 @@ wget
 
 RUN mkdir -p /usr/share/prometheus && \
 mkdir -p /etc/prometheus && \
-wget https://github.com/prometheus/prometheus/releases/download/v2.3.0/prometheus-2.3.0.linux-armv6.tar.gz -O /root/prometheus.tar.gz && \
+wget https://github.com/prometheus/prometheus/releases/download/v2.6.0/prometheus-2.6.0.linux-armv6.tar.gz -O /root/prometheus.tar.gz && \
 bsdtar -xvf prometheus.tar.gz -C ./ --strip-components=1 && \
 rm prometheus.tar.gz && \
 mv prometheus /bin/prometheus && \
