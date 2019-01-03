@@ -1,4 +1,5 @@
 FROM arm32v6/alpine
+COPY qemu-arm-static /usr/bin
 
 WORKDIR /root
 RUN apk add --update bash \
